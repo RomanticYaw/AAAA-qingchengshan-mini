@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/map",
+    "pages/map/map"
   ],
   "window": {
     "navigationBarTextStyle": "black",
