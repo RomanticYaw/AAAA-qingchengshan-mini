@@ -1,27 +1,50 @@
-<!--index.wxml-->
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    <view class="userinfo">
-      <block wx:if="{{canIUseNicknameComp && !hasUserInfo}}">
-        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
-          <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
-        </button>
-        <view class="nickname-wrapper">
-          <text class="nickname-label">昵称</text>
-          <input type="nickname" class="nickname-input" placeholder="请输入昵称" bind:change="onInputChange" />
-        </view>
-      </block>
-      <block wx:elif="{{!hasUserInfo}}">
-        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-        <view wx:else> 请使用2.10.4及以上版本基础库 </view>
-      </block>
-      <block wx:else>
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      </block>
-    </view>
-    <view class="usermotto">
-      <text class="user-motto">{{motto}}</text>
-    </view>
+<view class="page-wrap">
+  <view class="search-container">
+    <image src="/pages/images/搜索.svg" class="search-img"></image>
+    <input class="search-input"   placeholder="请输入关键字"  placeholder-style="color:#999"/>
   </view>
-</scroll-view>
+</view>
+<!-- 搜索框 -->
+
+<view>
+<swiper class="banner-swiper" indicator-dots circular autoplay interval="3000" duration="500">
+    <swiper-item>
+      <image src="/pages/images/sw1.png" class="banner-img" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/pages/images/sw2.png" class="banner-img" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/pages/images/sw3.png" class="banner-img" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/pages/images/sw4.png" class="banner-img" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+  </view>
+  <!-- 轮播图 -->
+
+<view class="box-row" scroll-y>
+  <view  class="box-wrap" scroll-x>
+   <image src="/pages/images/卷轴-2.svg"></image>
+   <text>地图</text>
+  </view>
+  <view class="box-wrap" scroll-x>
+   <image src="/pages/images/玉如意.svg"></image>
+   <text>文化</text>
+  </view>
+  <view class="box-wrap" scroll-x>
+   <image src="/pages/images/香囊.svg"></image>
+   <text>美食</text>
+  </view>
+  <view class="box-wrap" scroll-x>
+   <image src="/pages/images/玉佩-2.svg"></image>
+   <text>游玩</text>
+  </view>
+</view>
+<!-- 导航栏 -->
+
+<view class="weather">
+ <image src="/pages/images/天气.png" class="weather-img"></image>
+ <text class="weather-tx">青城山天气实况<br/>晴 19°/29° 空气良90</text>
+</view>
