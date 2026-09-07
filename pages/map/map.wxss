@@ -1,0 +1,23 @@
+/*--整体容器样式--*/
+.scrool-container{
+  height: 100vh;
+  background-color: #ffffff;
+}
+.map-wrap{
+  padding: 30rpx 0;
+  overflow: hidden;
+}
+.map-title{
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+/*---前山---*/
+.map-img1{
+  width: 100%;
+  margin-left: 0;
+}
+/*---后山--*/
+.map-img2{
+  width: 100%;
+  margin-left: 0%;
+}
