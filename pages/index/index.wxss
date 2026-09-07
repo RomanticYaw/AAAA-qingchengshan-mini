@@ -1,7 +1,7 @@
 .page-wrap {
   padding: 24rpx; 
 }
-/*搜索框样式*/
+/*-----搜索框样式-----*/
 .search-container {
   background-color: #ffffff;
   border-radius: 50rpx; 
@@ -67,10 +67,75 @@
 .weather-img{
   width: 100%;
   height: 200rpx;
+  border-radius: 20rpx;
 }
 .weather-tx{
   position: absolute;
   top: 10rpx;
   left: 10rpx;
+}
 
+/* -----标题通用样式 -----*/
+.title{
+  font-size: 32rpx;
+  font-weight: bold;
+  margin:30rpx 20rpx 20rpx;
+}
+
+/* -----门票部分----- */
+.scroll-row{
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx;
+}
+.ticket-item{
+  width:220rpx;
+  flex-shrink: 0;
+  background:#fff;
+  border-radius:20rpx;
+  margin-right:20rpx;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  min-height: 260rpx;
+}
+.ticket-item image{
+  width:100%;
+  height:180rpx;
+}
+.ticket-item text{
+  font-size:24rpx;
+  padding:6rpx 10rpx;
+}
+.price{
+  color:#121111;
+}
+
+/*-----文化资讯-----*/
+.news-card{
+  display:flex;
+  background:#fff;
+  margin:0 20rpx;
+  border-radius:16rpx;
+  padding:20rpx;
+}
+.news-card image{
+  width:220rpx;
+  height:180rpx;
+  margin-right:20rpx;
+}
+.news-text{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+}
+.news-title{
+  font-size:28rpx;
+  font-weight:bold;
+  margin-bottom:10rpx;
+}
+.news-desc{
+  font-size:22rpx;
+  color:#666;
+  line-height:1.6;
 }
