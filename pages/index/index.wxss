@@ -51,7 +51,10 @@
   flex-direction: column;
   align-items: center;
 }
-
+.icon-img{
+  width: 90rpx;
+  height: 90rpx;
+}
 /*-----天气板块-----*/
 .weather{
   position: relative;

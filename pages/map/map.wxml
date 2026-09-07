@@ -1,1 +1,14 @@
 <!--pages/map/map.wxml-->
+<!--垂直滚动容器-->
+<scroll-view class="scrool-container" scroll-y>
+     <!--青城前山地图-->
+<view class="map-wrap">
+<view class="map-title">----青城前山导览图----</view>
+<view><image src="/images/qianshan-map.jpg" class="map-img1" mode="widthFix"></image></view>
+</view>
+     <!--青城后山地图-->
+     <view class="map-wrap">
+<view class="map-title">----青城后山导览图----</view>
+<view><image src="/images/houshan-map.png" class="map-img2" mode="widthFix"></image></view>
+</view>   
+</scroll-view>

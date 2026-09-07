@@ -9,42 +9,42 @@
 <view>
 <swiper class="banner-swiper" indicator-dots circular autoplay interval="3000" duration="500">
     <swiper-item>
-      <image src="/pages/images/sw1.png" class="banner-img" mode="widthFix"></image>
+      <image src="/images/sw1.png" class="banner-img" mode="widthFix"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/pages/images/sw2.png" class="banner-img" mode="widthFix"></image>
+      <image src="/images/sw2.png" class="banner-img" mode="widthFix"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/pages/images/sw3.png" class="banner-img" mode="widthFix"></image>
+      <image src="/images/sw3.png" class="banner-img" mode="widthFix"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/pages/images/sw4.png" class="banner-img" mode="widthFix"></image>
+      <image src="/images/sw4.png" class="banner-img" mode="widthFix"></image>
     </swiper-item>
   </swiper>
   </view>
   <!-- 轮播图 -->
 
-<view class="box-row" scroll-y>
-  <view  class="box-wrap" scroll-x>
-   <image src="/pages/images/卷轴-2.svg"></image>
+<view class="box-row" >
+  <navigator class="box-wrap" url="/pages/map/map">
+   <image src="/images/卷轴-2.svg" class="icon-img"></image>
    <text>地图</text>
-  </view>
-  <view class="box-wrap" scroll-x>
-   <image src="/pages/images/玉如意.svg"></image>
+  </navigator>
+  <navigator class="box-wrap" >
+   <image src="/images/玉如意.svg" class="icon-img"></image>
    <text>文化</text>
-  </view>
-  <view class="box-wrap" scroll-x>
-   <image src="/pages/images/香囊.svg"></image>
+  </navigator>
+  <navigator class="box-wrap" >
+   <image src="/images/香囊.svg" class="icon-img"></image>
    <text>美食</text>
-  </view>
-  <view class="box-wrap" scroll-x>
-   <image src="/pages/images/玉佩-2.svg"></image>
+  </navigator>
+  <navigator class="box-wrap" >
+   <image src="/images/玉佩-2.svg" class="icon-img"></image>
    <text>游玩</text>
-  </view>
+  </navigator>
 </view>
 <!-- 导航栏 -->
 
 <view class="weather">
- <image src="/pages/images/天气.png" class="weather-img"></image>
+ <image src="/images/天气.png" class="weather-img"></image>
  <text class="weather-tx">青城山天气实况<br/>晴 19°/29° 空气良90</text>
 </view>
