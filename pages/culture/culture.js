@@ -1,66 +1,58 @@
-// pages/culture/culture.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    imgList: [
+      "/images/scene1.jpg",
+      "/images/scene2.jpg",
+      "/images/scene3.jpg"
+    ],
+    index: 0,
+    currentImg: "",
+    animationData: {}
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  onLoad() {
+    this.setData({
+      currentImg: this.data.imgList[0]
+    })
+    this.animation = wx.createAnimation({
+      duration: 350,
+      timingFunction: "ease"
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  changeImage(newIndex) {
+    this.animation.opacity(0).step()
+    this.setData({
+      animationData: this.animation.export()
+    })
+    setTimeout(() => {
+      this.setData({
+        index: newIndex,
+        currentImg: this.data.imgList[newIndex]
+      })
+      this.animation.opacity(1).step()
+      this.setData({
+        animationData: this.animation.export()
+      })
+    }, 180)
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+  prevPage() {
+    let idx = this.data.index - 1
+    if (idx < 0) idx = this.data.imgList.length - 1
+    this.changeImage(idx)
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
+  nextPage() {
+    let idx = this.data.index + 1
+    if (idx >= this.data.imgList.length) idx = 0
+    this.changeImage(idx)
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  startExplore() {
+    wx.showToast({
+      title: "开启青城山之旅",
+      icon: "none"
+    })
   }
 })

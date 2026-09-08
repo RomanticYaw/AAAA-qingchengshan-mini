@@ -1,3 +1,11 @@
+.page-bg {
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* 压到最底层 */
+}
 page {
   /* 整张国风效果图作为页面背景 */
   margin: 0;
@@ -11,23 +19,24 @@ page {
 
 /* 卡片容器：相对定位，用来叠加风景图 */
 .card-box {
-  width: 88%;
-  margin-top: 360rpx; /* 控制卡片距离页面顶部的距离，微调这个值上下移动卡片 */
+  width: 90%;
+  margin-top: 300rpx; /* 控制卡片距离页面顶部的距离，微调这个值上下移动卡片 */
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
 .card-image {
   width: 100%;
+  border-radius: 40rpx;
 }
 
 /* 风景图定位在卡片中间相框内 */
 .scene-wrap {
   position: absolute;
-  left: 16%;
-  top: 28%;
-  width: 68%;
-  height: 320rpx;
+  left: 10%;
+  top: 24%;
+  width: 80%;
+  height: 310rpx;
 }
 .scene-image {
   width: 100%;
@@ -42,8 +51,8 @@ page {
   margin: 70rpx 30rpx;
 }
 .btn-prev {
-  width: 330rpx;
-  height: 100rpx;
+  width: 250rpx;
+  height: 80rpx;
   background-color: #f8efd8;
   color: #704828;
   border-radius: 50rpx;
@@ -52,8 +61,8 @@ page {
   box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.1);
 }
 .btn-next {
-  width: 330rpx;
-  height: 100rpx;
+  width: 250rpx;
+  height: 80rpx;
   background-color: #e2bc94;
   color: #704828;
   border-radius: 50rpx;
@@ -64,8 +73,8 @@ page {
 
 /* 开始探索按钮 */
 .btn-explore {
-  width: 720rpx;
-  height: 110rpx;
+  width: 400rpx;
+  height: 100rpx;
   margin: 0 auto;
   display: block;
   background-color: #236b5b;
