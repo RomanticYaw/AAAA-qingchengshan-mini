@@ -1,4 +1,5 @@
 <!--pages/map/map.wxml-->
+<!--背景-->
 <!--垂直滚动容器-->
 <scroll-view class="scrool-container" scroll-y>
      <!--青城前山地图-->
