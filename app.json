@@ -4,7 +4,10 @@
     "pages/community/community",
     "pages/shop/shop",
     "pages/mine/mine",
-    "pages/map/map"
+    "pages/map/map",
+    "pages/culture/culture",
+    "pages/foodIntro/foodIntro"
+
   ],
   "window": {
     "navigationBarTextStyle": "black",

@@ -40,11 +40,11 @@ object-fit: cover;
   width: 100%;
   border-radius: 20rpx; /* 图片圆角 */
   overflow: hidden;
-  height: 360rpx;
+  height: 320rpx;
 }
 .banner-img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /*-----导航样式-----*/
@@ -63,6 +63,8 @@ object-fit: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #fff8e8;
+  text-shadow: 1rpx 1rpx 3rpx rgba(0,0,0,0.6);
 }
 .icon-img{
   width: 90rpx;
@@ -76,11 +78,14 @@ object-fit: cover;
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  color: #fff8e8;
+  text-shadow: 1rpx 1rpx 3rpx rgba(0,0,0,0.6);
 }
 .weather-img{
   width: 100%;
   height: 200rpx;
   border-radius: 20rpx;
+  object-fit: cover;
 }
 .weather-tx{
   position: absolute;
@@ -93,6 +98,8 @@ object-fit: cover;
   font-size: 32rpx;
   font-weight: bold;
   margin:30rpx 20rpx 20rpx;
+  color: #fff8e8;
+  text-shadow: 1rpx 1rpx 3rpx rgba(0,0,0,0.6);
 }
 
 /* -----门票部分----- */
