@@ -1,2 +1,20 @@
-<!--pages/culture/culture.wxml-->
-<text>pages/culture/culture.wxml</text>
+<image class="page-bg" src="/images/bk.jpg" mode="widthFix"></image>
+<view class="page">
+  <!-- 绿色卡片（独立图片） -->
+  <view class="card-box">
+    <image src="/images/bk1-1.jpg" class="card-image" mode="widthFix"></image>
+    <!-- 居中切换风景图，带动画 -->
+    <view class="scene-wrap" animation="{{animationData}}">
+      <image src="{{currentImg}}" class="scene-image" mode="aspectFill"></image>
+    </view>
+  </view>
+
+  <!-- 翻页按钮 -->
+  <view class="btn-row">
+    <button class="btn-prev" bindtap="prevPage">上一页</button>
+    <button class="btn-next" bindtap="nextPage">下一页</button>
+  </view>
+
+  <!-- 底部按钮 -->
+  <button class="btn-explore" bindtap="startExplore">开始探索</button>
+</view>
