@@ -7,7 +7,6 @@
     "pages/map/map",
     "pages/culture/culture",
     "pages/foodIntro/foodIntro"
-
   ],
   "window": {
     "navigationBarTextStyle": "black",

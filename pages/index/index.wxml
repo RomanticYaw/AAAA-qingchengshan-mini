@@ -13,16 +13,16 @@
 <view>
 <swiper class="banner-swiper" indicator-dots circular autoplay interval="3000" duration="500">
     <swiper-item>
-      <image src="/images/sw1.png" class="banner-img" mode="widthFix"></image>
+      <image src="/images/sw1.jpg" class="banner-img" mode="widthFix"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/sw2.png" class="banner-img" mode="widthFix"></image>
+      <image src="/images/sw2.jpg" class="banner-img" mode="widthFix"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/sw3.png" class="banner-img" mode="widthFix"></image>
+      <image src="/images/sw3.jpg" class="banner-img" mode="widthFix"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/sw4.png" class="banner-img" mode="widthFix"></image>
+      <image src="/images/sw4.jpg" class="banner-img" mode="widthFix"></image>
     </swiper-item>
   </swiper>
   </view>
