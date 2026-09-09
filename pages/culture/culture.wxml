@@ -1,4 +1,4 @@
-<image class="page-bg" src="/images/bk.jpg" mode="widthFix"></image>
+<image class="page-bg" src="/images/culture-bk.jpg" mode="widthFix"></image>
 <view class="page">
   <!-- 绿色卡片（独立图片） -->
   <view class="card-box">
