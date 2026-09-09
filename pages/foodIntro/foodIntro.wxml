@@ -1,0 +1,26 @@
+<!--pages/foodIntro/foodIntro.wxml-->
+<view class="food-page">
+<!--欢迎板块-->
+  <view class="welcome-header">
+      <image class="bg-img" src="/images/welcome.jpg" mode="aspectFill"></image>
+        <view class="text-wrap">
+          <text class="welcome-text">Welcome</text>
+          <text class="welcome-titlle">寻味青城山</text>
+        </view>
+  </view>
+</view>
+<!--美食介绍卡片-->
+<view>
+<!--1-->
+<view>
+<text>白果炖鸡</text>
+</view>
+<!--2-->
+<view>
+<text>老腊肉</text>
+</view>
+<!--3-->
+<view>
+<text>洞天贡茶</text>
+</view>
+</view>

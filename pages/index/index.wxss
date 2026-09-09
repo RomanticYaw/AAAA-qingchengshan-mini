@@ -1,14 +1,27 @@
 .page-wrap {
   padding: 24rpx; 
 }
+.page-bg{
+  width: 100%;
+  min-height: 100vh;
+}
+.bg-img{
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: -1;
+object-fit: cover;
+}
 /*-----搜索框样式-----*/
 .search-container {
-  background-color: #ffffff;
   border-radius: 50rpx; 
   padding: 16rpx 30rpx;
   margin-bottom: 5rpx;
   display: flex;
   align-items: center;
+  background-color: rgba(255,255,255,0.82);
 }
 .search-input {
   font-size: 26rpx;
@@ -27,11 +40,11 @@
   width: 100%;
   border-radius: 20rpx; /* 图片圆角 */
   overflow: hidden;
-  height: 360rpx;
+  height: 320rpx;
 }
 .banner-img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /*-----导航样式-----*/
@@ -50,6 +63,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #fff8e8;
+  text-shadow: 1rpx 1rpx 3rpx rgba(0,0,0,0.6);
 }
 .icon-img{
   width: 90rpx;
@@ -63,11 +78,14 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  color: #fff8e8;
+  text-shadow: 1rpx 1rpx 3rpx rgba(0,0,0,0.6);
 }
 .weather-img{
   width: 100%;
   height: 200rpx;
   border-radius: 20rpx;
+  object-fit: cover;
 }
 .weather-tx{
   position: absolute;
@@ -80,6 +98,8 @@
   font-size: 32rpx;
   font-weight: bold;
   margin:30rpx 20rpx 20rpx;
+  color: #fff8e8;
+  text-shadow: 1rpx 1rpx 3rpx rgba(0,0,0,0.6);
 }
 
 /* -----门票部分----- */
