@@ -10,17 +10,29 @@
   </view>
 </view>
 <!--美食介绍卡片-->
-<view>
+<view class="food-list">
 <!--1-->
-<view>
-<text>白果炖鸡</text>
+<navigator url="/pages/shop/shop" hover-class="card-hover" >
+<view class="food-card">
+<image class="food-img" src="/images/baiguo.jpg" mode="aspectFill"></image>
+<view class="food-name">白果炖鸡</view>
+<view class="food-desc">青城山非遗美食，山间土鸡配本地白果，山泉水文火慢炖，汤色奶白，鲜香滋补，道家养生风味。</view>
 </view>
+</navigator>
 <!--2-->
-<view>
-<text>老腊肉</text>
+<navigator url="/pages/shop/shop" hover-class="card-hover" >
+<view class="food-card">
+<image class="food-img" src="/images/larou.jpg" mode="aspectFill"></image>
+<view class="food-name">老腊肉</view>
+<view class="food-desc">农家传统熏制老腊肉，肉质紧实油润，熏香浓郁，咸香回味悠长，青城山地道乡土特产。</view>
 </view>
+</navigator>
 <!--3-->
-<view>
-<text>洞天贡茶</text>
+<navigator url="/pages/shop/shop" hover-class="card-hover" >
+<view class="food-card">
+<image class="food-img" src="/images/cha.jpg" mode="aspectFill"></image>
+<view class="food-name">洞天贡茶</view>
+<view class="food-desc">青城四绝之一，古时贡品，云雾山间产出，茶汤清亮，香气清雅醇和，品味青城山水茶香。</view>
 </view>
+</navigator>
 </view>

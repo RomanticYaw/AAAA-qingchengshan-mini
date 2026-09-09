@@ -27,14 +27,13 @@
   </swiper>
   </view>
 
-<!--导航栏-->
+  <!-- 导航栏 -->
 <view class="box-row" >
   <navigator class="box-wrap" url="/pages/map/map">
    <image src="/images/卷轴-2.svg" class="icon-img"></image>
    <text>地图</text>
   </navigator>
-
-  <navigator class="box-wrap" url="/pages/culture/culture">
+  <navigator class="box-wrap" url="/pages/culture/culture" >
    <image src="/images/玉如意.svg" class="icon-img"></image>
    <text>文化</text>
   </navigator>
